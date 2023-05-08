@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../assets/logo-pestaña.png">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-container">
+            <a href="../index.html"><img src="../assets/logo.png" alt="logo del gimnasio"></a>
+            <ul class="nav-container__lista">
+                <li><a href="./entrenamientos.html">ENTRENAMIENTOS</a></li>
+                <li><a href="./galeria.html">GALERÍA</a></li>
+                <li><a href="./about-us.html">QUIÉNES SOMOS?</a></li>
+                <li><a href="./contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="consulta">
+            <div class="consulta-title">
+                <h2>Dejanos tu consulta</h2>
+                <p>Te responderemos a la brevedad!</p>
+            </div>
+            <section class="consulta-seccion">
+                <form action="" class="consulta-form">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" name="apellido" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="correo">Email</label>
+                        <input type="email" name="correo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="medio">Cómo nos conociste?</label>
+                        <select name="medio" required>
+                            <option value="" disabled selected>Selecciona una opción</option>
+                            <option value="1">Instagram</option>
+                            <option value="2">Facebook</option>
+                            <option value="3">Buscador web</option>
+                            <option value="4">A través de un amigo</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="area">Consulta</label>
+                        <textarea name="area" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </section>
+        </article>
+    </main>
+
+
+    <footer class="footerGeneral">
+        <section class="cardImg">
+            <img class="logoFooter" src="../assets/logo.png" alt="logo del gimnasio">
+            <a href="https://www.instagram.com">
+                <img class="igFooter" src="../assets/footer/ig-logo.png"
+                    alt="enlace que te redireccionará al instagram del gimnasio">
+            </a>
+        </section>
+        <section class="cardSocios">
+            <h3>SOCIOS</h3>
+            <ul>
+                <li><a href="">Atención al Socio</a></li>
+                <li><a href="">Solicitud de Baja</a></li>
+                <li><a href="">Trámite de arrepentimiento</a></li>
+            </ul>
+        </section>
+        <section class="cardLegal">
+            <h3>LEGAL</h3>
+            <ul>
+                <li><a href="">Términos y condiciones</a></li>
+                <li><a href="">Política de Privacidad</a></li>
+                <li><a href="">Defensa del Consumidor</a></li>
+            </ul>
+        </section>
+    </footer>
+</body>
+
+</html>

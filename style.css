@@ -1,0 +1,410 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ============ ESTILO BARRA DE NAVEGACIÓN ============ */
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+.nav-container a img {
+    width: 10rem;
+    margin: 1rem 5rem;
+}
+
+.nav-container__lista {
+    background-color: #E3FDFD;
+    box-shadow: 3px 1px 10px 0 #ade8f4;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto 3rem;
+    padding: 1%;
+    border-radius: 30px;
+}
+
+.nav-container__lista li a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+    margin: 0 2rem;
+    padding: .5rem .5rem;
+}
+
+.nav-container__lista li:hover {
+    transform: scale(1.1);
+}
+
+/* ============ INICIO ESTILO INDEX ============ */
+
+/* ============ ESTILO TARJETAS INDEX ============ */
+
+.plan-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 8rem auto;
+}
+
+/* ============ ESTILO TARJETA ELECCION ============ */
+
+.plan-container__eleccion h1 {
+    font-size: 2.5rem;
+}
+
+.plan-container__eleccion p {
+    font-size: 1.3rem;
+}
+
+/* ============ ESTILO TARJETA PLAN TOTAL ============ */
+
+.plan-container__total {
+    background-color: #E3FDFD;
+    box-shadow: 3px 1px 10px 0 #ade8f4;
+    padding: 2rem;
+    border-radius: 40px;
+}
+
+.plan-container__total:hover {
+    transform: scale(1.02);
+}
+
+.plan-container__total h2 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.plan-container__total ul {
+    list-style-type: none;
+    margin: 1.5rem auto;
+}
+
+.plan-container__total ul li::before {
+    content: '✓  ';
+}
+
+.plan-container__total a {
+    background-color: #71C9CE;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* ============ ESTILO TARJETA PLAN TOTAL ============ */
+
+.plan-container__plus {
+    background-color: #E3FDFD;
+    box-shadow: 3px 1px 10px 0 #ade8f4;
+    padding: 2rem;
+    border-radius: 40px;
+}
+
+.plan-container__plus:hover {
+    transform: scale(1.02);
+}
+
+.plan-container__plus h2 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.plan-container__plus ul {
+    list-style-type: none;
+    margin: 1.5rem auto;
+}
+
+.plan-container__plus ul li::before {
+    content: '✓  ';
+}
+
+#ultimoItem::before {
+    content: 'X   ';
+}
+
+.plan-container__plus a {
+    background-color: #71C9CE;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+
+/* ============ FIN ESTILO INDEX ============ */
+/* ========================================== */
+/* ============ INICIO ESTILO ENTRENAMIENTOS ============ */
+
+.entrenamientos-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 13rem auto;
+}
+
+.entrenamientos-title h1 {
+    font-size: 3rem;
+}
+
+.entrenamientos-title h2 {
+    font-size: 1.7rem;
+}
+
+.entrenamientos-title__link {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    margin: 2.5rem auto;
+    background-color: #E3FDFD;
+    padding: 1rem;
+    border-radius: 50px;
+    box-shadow: 1px 1px 10px 0 #000;
+
+}
+
+.entrenamientos-title__link:hover {
+    transform: scale(1.02);
+}
+
+.entrenamientos-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 13rem;
+}
+
+/* ========= CARTAS ENTRENAMIENTOS ========= */
+
+.entrenamientos-container__card img,
+.entrenamientos-container__card--op img {
+    width: 40rem;
+    box-shadow: 2px 4px 15px 0 #000;
+    /* border: 2px solid black; */
+}
+
+.entrenamientos-container__card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.entrenamientos-container__card div {
+    width: 40rem;
+}
+
+.entrenamientos-container__card h3 {
+    font-size: 2.5rem;
+}
+
+.entrenamientos-container__card p {
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+/* ========= CARTAS OPUESTAS ========= */
+
+.entrenamientos-container__card--op {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.entrenamientos-container__card--op div {
+    width: 40rem;
+}
+
+.entrenamientos-container__card--op h3 {
+    font-size: 2.5rem;
+}
+
+.entrenamientos-container__card--op p {
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+.footerEntrenamientos {
+    margin-top: 12rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footerEntrenamientos .cardImg {
+    margin: 2rem 49rem 0 0;
+}
+
+.footerEntrenamientos .logoFooter {
+    width: 10rem;
+}
+
+.footerEntrenamientos .igFooter {
+    width: 3rem;
+    margin-left: 1.5rem;
+}
+
+.footerEntrenamientos .cardSocios ul {
+    list-style-type: none;
+}
+
+.footerEntrenamientos .cardSocios a {
+    text-decoration: none;
+    color: black;
+}
+
+.footerEntrenamientos .cardLegal ul {
+    list-style-type: none;
+}
+
+.footerEntrenamientos .cardLegal a {
+    text-decoration: none;
+    color: black;
+}
+
+/* ============ FIN ESTILO ENTRENAMIENTOS ============ */
+/* ========================================== */
+/* ============ INICIO ESTILO CONTACTO ============ */
+
+
+.consulta .consulta-title {
+    text-align: center;
+    font-size: 2rem;
+    margin: 3rem auto;
+}
+
+/* Estilo para el formulario */
+.consulta-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+/* Estilo para cada grupo de elementos */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+/* Estilo para la etiqueta del campo */
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Estilo para los campos de entrada */
+input,
+textarea,
+select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    transition: border-color 0.3s ease-in-out;
+    width: 100%;
+}
+
+/* Estilo para los campos de entrada cuando están enfocados */
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #006699;
+    outline: none;
+}
+
+/* Estilo para el botón de envío */
+button[type="submit"] {
+    background-color: #006699;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Estilo para el botón de envío cuando se pasa el cursor encima */
+button[type="submit"]:hover {
+    background-color: #00557e;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============ ESTILO FOOTER ============ */
+
+.footerGeneral {
+    margin-top: 15rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footerGeneral .cardImg {
+    margin: 2rem 49rem 0 0;
+}
+
+.footerGeneral .logoFooter {
+    width: 10rem;
+}
+
+.footerGeneral .igFooter {
+    width: 3rem;
+    margin-left: 1.5rem;
+}
+
+.footerGeneral .cardSocios ul {
+    list-style-type: none;
+}
+
+.footerGeneral .cardSocios a {
+    text-decoration: none;
+    color: black;
+}
+
+.footerGeneral .cardLegal ul {
+    list-style-type: none;
+}
+
+.footerGeneral .cardLegal a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* 
+===============================               =============================== 
+=============================== MEDIA QUERIES =============================== 
+===============================               =============================== 
+*/
+
+@media screen and (max-width: 1200px) {}
