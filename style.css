@@ -275,25 +275,28 @@ body {
 /* ========================================== */
 /* ============ INICIO ESTILO CONTACTO ============ */
 
-
 .consulta-title {
     text-align: center;
     font-size: 2rem;
     margin: 3rem auto;
 }
 
-/* Estilo para el formulario */
+
+/* ESTILO FORMULARIO */
+
 .consulta-form {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    font-size: 16px;
-    line-height: 1.5;
-    padding: 20px;
-    background-color: #f5f5f5;
+    padding: 2rem;
+    background-color:#E3FDFD;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0 #ade8f4;
+    margin: 0 30rem;
 }
 
-/* Estilo para cada grupo de elementos */
+/* ESTILO PARA CADA GRUPO DE LOS ELEMENTOS */
+
 .form-group {
     display: flex;
     flex-direction: column;
@@ -301,51 +304,53 @@ body {
     width: 100%;
 }
 
-/* Estilo para la etiqueta del campo */
+/* ESTILO PARA ETIQUETAS DE INPUTS */
+
 label {
     font-weight: bold;
     margin-bottom: 5px;
 }
 
-/* Estilo para los campos de entrada */
+/* ESTILO PARA LOS INPUTS */
+
 input,
 textarea,
 select {
-    padding: 10px;
-    font-size: 16px;
+    padding: 7px; 
+    font-size: 1rem;
     border-radius: 5px;
     border: 1px solid #ccc;
-    background-color: #fff;
-    transition: border-color 0.3s ease-in-out;
-    width: 100%;
+    font-family: 'Poppins', sans-serif;
+
 }
 
-/* Estilo para los campos de entrada cuando están enfocados */
-input:focus,
-textarea:focus,
-select:focus {
+/* ESTILO PARA LOS INPUTS CUANDO ESTAN ENFOCADOS */
+
+input:focus, 
+textarea:focus, 
+select:focus{
     border-color: #006699;
     outline: none;
 }
 
-/* Estilo para el botón de envío */
-button[type="submit"] {
-    background-color: #006699;
-    color: #fff;
-    font-size: 16px;
+/* ESTILO PARA EL BOTON DE ENVIO */
+
+button {
+    background-color: #71c9ce75;
+    font-size: 1rem;
     font-weight: bold;
-    text-transform: uppercase;
     border: none;
     border-radius: 5px;
-    padding: 10px 20px;
+    padding: 10px 0;
     cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
+    width: 20%;
+    margin: 1rem auto;
 }
 
-/* Estilo para el botón de envío cuando se pasa el cursor encima */
-button[type="submit"]:hover {
-    background-color: #00557e;
-}
+
+button:hover {
+    background-color: #ade8f4;
+} 
 
 
 
