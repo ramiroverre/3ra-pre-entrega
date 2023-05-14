@@ -164,12 +164,13 @@ body {
 .entrenamientos-title__link {
     text-decoration: none;
     color: black;
-    font-weight: bolder;
+    font-weight: bold;
     margin: 2.5rem auto;
     background-color: #E3FDFD;
     padding: 1rem;
     border-radius: 50px;
-    box-shadow: 1px 1px 10px 0 #000;
+    border: .1px solid #AFE5E8;
+    /* box-shadow: 1px 1px 10px #000000; */
 
 }
 
@@ -207,7 +208,7 @@ body {
 }
 
 .entrenamientos-container__card p {
-    text-align: justify;
+    text-align: start;
     font-size: 1.2rem;
 }
 
@@ -229,7 +230,7 @@ body {
 }
 
 .entrenamientos-container__card--op p {
-    text-align: justify;
+    text-align:start;
     font-size: 1.2rem;
 }
 
