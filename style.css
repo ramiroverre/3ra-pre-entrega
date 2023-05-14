@@ -73,10 +73,6 @@ body {
     border-radius: 40px;
 }
 
-.plan-container__total:hover {
-    transform: scale(1.02);
-}
-
 .plan-container__total h2 {
     text-align: center;
     font-size: 2.5rem;
@@ -96,8 +92,13 @@ body {
     text-decoration: none;
     color: black;
     border-radius: 10px;
-    display: flex;
-    justify-content: center;
+    margin-left: 6rem;
+    padding: .5rem;
+    font-weight: bold;
+}
+
+.plan-container__total a:hover {
+    background-color: #ade8f4;
 }
 
 
@@ -108,10 +109,6 @@ body {
     box-shadow: 3px 1px 10px 0 #ade8f4;
     padding: 2rem;
     border-radius: 40px;
-}
-
-.plan-container__plus:hover {
-    transform: scale(1.02);
 }
 
 .plan-container__plus h2 {
@@ -136,9 +133,14 @@ body {
     background-color: #71C9CE;
     text-decoration: none;
     color: black;
-    display: flex;
-    justify-content: center;
     border-radius: 10px;
+    margin-left: 6rem;
+    padding: .5rem;
+    font-weight: bold;
+}
+
+.plan-container__plus a:hover {
+    background-color: #ade8f4;
 }
 
 
@@ -150,7 +152,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 13rem auto;
+    margin: 7rem auto;
 }
 
 .entrenamientos-title h1 {
@@ -169,8 +171,7 @@ body {
     background-color: #E3FDFD;
     padding: 1rem;
     border-radius: 50px;
-    border: .1px solid #AFE5E8;
-    /* box-shadow: 1px 1px 10px #000000; */
+    box-shadow: 1px 1px 10px #AFE5E8;
 
 }
 
@@ -345,9 +346,8 @@ button {
     padding: 10px 0;
     cursor: pointer;
     width: 20%;
-    margin: 1rem auto;
+    margin: 2rem auto;
 }
-
 
 button:hover {
     background-color: #ade8f4;
