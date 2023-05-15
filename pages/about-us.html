@@ -13,30 +13,61 @@
     </head>
 <body>
     <header>
-        <nav class="navContainer">
-            <a href="../index.html"><img src="../assets/logo.png" alt="logo del gimnasio"></a>
-            <ul class="navLista">
-                <li><a href="./entrenamientos.html">ENTRENAMIENTOS</a></li>
-                <li><a href="./galeria.html">GALERÍA</a></li>
-                <li><a href="./about-us.html">QUIÉNES SOMOS?</a></li>
-                <li><a href="./contacto.html">CONTACTO</a></li>
+        <nav class="nav-container">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <a class="enlace" href="../index.html">
+                <img class="logo" src="../assets/logo.png">
+            </a>
+            <ul class="nav-container__lista">
+                <li><a href="../pages/entrenamientos.html">ENTRENAMIENTOS</a></li>
+                <li><a href="../pages/galeria.html">GALERÍA</a></li>
+                <li><a href="../pages/about-us.html">QUIÉNES SOMOS?</a></li>
+                <li><a href="../pages/contacto.html">CONTACTO</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-
+        <article class="profesContenedor">
+            <section class="profesTitle">
+                <h1>MÁS QUE UN GIMNASIO, SOMOS UN CLUB DE AMIGOS</h1>
+                <h3>Los mejores preparadores físicos del país estarán a tu disposicion para que logres el cambio que tanto estas buscando.</h3>
+            </section>
+            <section class="imgProfe0">
+                <img src="https://placeholder.com/240x240" alt="">
+            </section>
+            <section class="datosProfe0">
+                <h6>Nombre del profesor</h6>
+                <p>Descripción de sus estudios y especialización<nav></nav></p>
+            </section>
+            <section class="imgProfe1">
+                <img src="https://placeholder.com/240x240" alt="">
+            </section>
+            <section class="datosProfe1">
+                <h6>Nombre del profesor</h6>
+                <p>Descripción de sus estudios y especialización<nav></nav></p>
+            </section>
+            <section class="imgProfe2">
+                <img src="https://placeholder.com/240x240" alt="">
+            </section>
+            <section class="datosProfe2">
+                <h6>Nombre del profesor</h6>
+                <p>Descripción de sus estudios y especialización<nav></nav></p>
+            </section>
+        </article>
     </main>
 
-    <footer>
-        <section class="cardImg">
-            <img class="logoFooter" src="../assets/logo.png" alt="logo del gimnasio">
-            <a href="https://www.instagram.com">
-                <img class="igFooter" src="../assets/footer/ig-logo.png"
-                    alt="enlace que te redireccionará al instagram del gimnasio">
-            </a>
+    <footer class="footer-general">
+        <section>
+            <div class="footer-general__logos">
+                <img class="logoGym" src="../assets/logo.png" alt="logo del gimnasio">
+                <a href="https://www.instagram.com"><img class="logoIg" id="ig" src="../assets/footer/ig-logo.png" alt="enlace que te redireccionará al instagram del gimnasio"></a>
+            </div>
         </section>
-        <section class="cardSocios">
+        <section class="footer-general__socios">
             <h3>SOCIOS</h3>
             <ul>
                 <li><a href="">Atención al Socio</a></li>
@@ -44,7 +75,7 @@
                 <li><a href="">Trámite de arrepentimiento</a></li>
             </ul>
         </section>
-        <section class="cardLegal">
+        <section class="footer-general__legal">
             <h3>LEGAL</h3>
             <ul>
                 <li><a href="">Términos y condiciones</a></li>
@@ -53,5 +84,8 @@
             </ul>
         </section>
     </footer>
+
+
+    <script src="https://kit.fontawesome.com/111a35f41f.js" crossorigin="anonymous"></script>
 </body>
 </html>

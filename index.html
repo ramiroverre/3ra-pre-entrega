@@ -16,7 +16,13 @@
 <body>
     <header>
         <nav class="nav-container">
-            <a href="./index.html"><img src="./assets/logo.png" alt="logo del gimnasio"></a>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <a class="enlace" href="./index.html">
+                <img class="logo" src="./assets/logo.png">
+            </a>
             <ul class="nav-container__lista">
                 <li><a href="./pages/entrenamientos.html">ENTRENAMIENTOS</a></li>
                 <li><a href="./pages/galeria.html">GALERÍA</a></li>
@@ -27,6 +33,7 @@
     </header>
 
     <main>
+        <section class="fondo"></section>
         <article class="plan-container">
             <section class="plan-container__eleccion">
                 <h1>ELEGÍ EL PLAN QUE MÁS SE ADAPTE A VOS</h1>
@@ -55,15 +62,15 @@
         </article>
     </main>
 
-    <footer class="footerGeneral">
-        <section class="cardImg">
-            <img class="logoFooter" src="./assets/logo.png" alt="logo del gimnasio">
-            <a href="https://www.instagram.com">
-                <img class="igFooter" src="./assets/footer/ig-logo.png"
-                    alt="enlace que te redireccionará al instagram del gimnasio">
-            </a>
+    <footer class="footer-general">
+        <section>
+            <div class="footer-general__logos">
+                <img class="logoGym" src="./assets/logo.png" alt="logo del gimnasio">
+                <a href="https://www.instagram.com"><img class="logoIg" id="ig" src="./assets/footer/ig-logo.png"
+                        alt="enlace que te redireccionará al instagram del gimnasio"></a>
+            </div>
         </section>
-        <section class="cardSocios">
+        <section class="footer-general__socios">
             <h3>SOCIOS</h3>
             <ul>
                 <li><a href="">Atención al Socio</a></li>
@@ -71,7 +78,7 @@
                 <li><a href="">Trámite de arrepentimiento</a></li>
             </ul>
         </section>
-        <section class="cardLegal">
+        <section class="footer-general__legal">
             <h3>LEGAL</h3>
             <ul>
                 <li><a href="">Términos y condiciones</a></li>
@@ -80,6 +87,8 @@
             </ul>
         </section>
     </footer>
+
+    <script src="https://kit.fontawesome.com/111a35f41f.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
