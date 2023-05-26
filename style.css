@@ -328,7 +328,8 @@ body {
     background-color: #E3FDFD;
     border-radius: 10px;
     box-shadow: 0px 0px 20px 0 #ade8f4;
-    margin: 0 30rem;
+    width: 30rem;
+    margin: 0 auto;
 }
 
 /* ESTILO PARA CADA GRUPO DE LOS ELEMENTOS */
