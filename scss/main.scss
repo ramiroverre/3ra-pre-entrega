@@ -1,0 +1,18 @@
+/* ============ RESET CSS ============ */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/* ============ FUENTE WEB ============ */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+@import "./_header";
+@import "./_index.scss";
+@import "./_entrenamientos";
+@import "./_footer-general";
+@import "./footer-entrenamientos";

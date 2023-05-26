@@ -1,0 +1,29 @@
+.footerEntrenamientos {
+    margin-top: 12rem;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #71C9CE;
+
+    .cardImg {
+        margin: 2rem 49rem 0 0;
+
+        .logoFooter {
+            width: 10rem;
+        }
+
+        a {
+            .igFooter {
+                width: 3rem;
+                margin-left: 1.5rem;
+            }
+        }
+    }
+
+    .cardSocios,
+    .cardLegal {
+        a {
+            color: black;
+        }
+    }
+}
