@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
 }
@@ -11,8 +12,11 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-@import "./_header";
+@import "./_header.scss";
 @import "./_index.scss";
-@import "./_entrenamientos";
-@import "./_footer-general";
-@import "./footer-entrenamientos";
+@import "./_entrenamientos.scss";
+@import "./_contacto.scss";
+@import "./_galeria.scss";
+@import "./_about-us.scss";
+@import "./_footer-general.scss";
+@import "./_mediaqueries.scss"

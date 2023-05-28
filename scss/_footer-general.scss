@@ -1,40 +1,49 @@
 .footer-general {
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
-    margin-top: 15rem;
-    background-color:#E3FDFD;
+    background-color: #55CDFC;
+    margin-top: 5rem;
+    padding: 5rem 0;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: min-content;
+    grid-template-areas: 
+    "listas derechos derechos redes";
 
-    .footer-general__logos {
-        display: flex;
-        margin-left: 5rem;
-
-        .logoGym {
-            width: 10%;
-            height: 10%;
-            margin-right: 1rem;
-        }
-
-        a {
-            .logoIg {
-                width: 9%;
-            }
-        }
-    }
-
-    .footer-general__socios,
-    .footer-general__legal {
+    .footer-redes {
+        grid-area: redes;
+        align-self: self-end;
         text-align: center;
-        margin-right: 2rem;
-        width: 30%;
+        margin-bottom: 10px;
 
-        li {
-            margin: 5px 0;
-
-            a{ 
-                color: black;
+        .footer-redes__iconos {
+            a{
+                img {
+                    margin: 5px 10px 0 10px;
+                    width: 30px;
+                }
             }
         }
     }
+    .footer-derechos {
+        grid-area: derechos;
+        text-align: center;
 
+        img {
+            width: 120px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .footer-listas {
+        grid-area: listas;
+        display: flex;
+        justify-content: space-around;
+
+        ul{
+            li{
+                a{
+                    color: #000000;
+                }
+            }
+        }
+    }
 }

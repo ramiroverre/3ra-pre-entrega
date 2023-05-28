@@ -1,65 +1,84 @@
-.fondo {
-    background: url(../assets/fondo.jpg) no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: calc(26vh - 80px);
-}
+.contenedor-inicio {
 
-.plan-container {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 2rem auto;
+    .contenedor-titulo {
+        background-image: url(../assets/fondoIndex.jpg);
+        text-align: center;
+        color: #fff;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 8rem 0;
 
-    .plan-container__eleccion {
         h1 {
-            font-size: 2.5rem;
+            font-size: 3.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
 
         p {
-            font-size: 1.3rem;
+            font-size: 2rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
     }
 
-    .plan-container__total,
-    .plan-container__plus {
-        background-color: #E3FDFD;
-        box-shadow: 3px 1px 10px 0 #ade8f4;
-        padding: 2rem;
-        border-radius: 40px;
+    .contenedor-planes {
+        padding: 2rem 0;
+        display: flex;
+        justify-content: space-around;
 
-        h2 {
-            text-align: center;
-            font-size: 2.5rem;
-        }
+        .plan-total,
+        .plan-plus {
+            background-color: #fff;
+            padding: 2rem 0;
+            border-radius: 10px;
+            
+            h2 {
+                font-size: 4rem;
+                text-align: center;
+            }
 
-        ul {
-            list-style-type: none;
-            margin: 1.5rem auto;
+            ul {
+                li {
+                    font-size: 1.5rem;
+                }
+                li::before {
+                    content: '✔    ';
+                }
+            }
 
-            li::before {
-                content: '✓  ';
+            #ultimoItem::before {
+                content: 'X   ';
+            }
+
+            a {
+                background-color: #55CDFC;
+                color: #000000;
+                display: block;
+                text-align: center;
+                margin: 1rem 10rem 0 10rem;
+                padding: .7rem;
+                border-radius: 5px;
+            }
+
+            a:hover {
+                background-color: #0077B6;
             }
         }
-
-        a {
-            background-color: #71C9CE;
-            text-decoration: none;
-            color: black;
-            border-radius: 10px;
-            margin-left: 6rem;
-            padding: .5rem;
-            font-weight: bold;
-        }
-
-        a:hover {
-            background-color: #ade8f4;
-        }
-
-        #ultimoItem::before {
-            content: 'X   ';
-        }
     }
-
-    
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

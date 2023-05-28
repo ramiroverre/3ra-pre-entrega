@@ -1,0 +1,58 @@
+.profesContenedor {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: min-content min-content min-content min-content;
+    grid-template-areas: 
+    "title title"
+    "img0 datos0"
+    "img1 datos1"
+    "img2 datos2";
+    margin: 5rem 5rem;
+
+    .profesTitle {
+        grid-area: title;
+        text-align: center;
+        margin-bottom: 5rem;
+
+        h1 {
+            font-size: 3rem;
+        }
+    }
+
+    .datosProfe0 {
+        grid-area: datos0;
+    }
+
+    .datosProfe1 {
+        grid-area: datos1;
+    }
+    
+    .datosProfe2 {
+        grid-area: datos2;
+    }
+
+    .imgProfe0 {
+        grid-area: img0;
+        margin: 0 auto;
+    }
+
+    .imgProfe1 {
+        grid-area: img1;
+        margin: 0 auto;
+    }
+    
+    .imgProfe2 {
+        grid-area: img2;
+        margin: 0 auto;
+    }
+    
+    .datosProfe0,
+    .datosProfe1,
+    .datosProfe2 {
+        font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+}

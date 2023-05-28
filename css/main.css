@@ -3,6 +3,8 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
 }
@@ -13,15 +15,15 @@ body {
 }
 
 .nav-container {
-  background-color: #E3FDFD;
+  background-color: #55CDFC;
   height: 80px;
   width: 100%;
 }
-.nav-container .enlace {
+.nav-container .nav-enlace-logo {
   position: absolute;
   padding: 20px 50px;
 }
-.nav-container .enlace .logo {
+.nav-container .nav-enlace-logo img {
   height: 40px;
 }
 .nav-container ul {
@@ -35,91 +37,123 @@ body {
   margin: 25px 15px;
 }
 .nav-container ul li a {
-  color: black;
+  color: #000000;
   font-weight: bold;
   font-size: 18px;
   padding: 7px 13px;
-  border-radius: 20px;
-}
-.nav-container ul li a:hover {
-  background-color: #71C9CE;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
-.nav-container .checkbtn {
-  font-size: 30px;
-  color: black;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
-  cursor: pointer;
-  display: none;
-}
-.nav-container #check {
-  display: none;
+  border-radius: 10px;
 }
 
-.fondo {
-  background: url(../assets/fondo.jpg) no-repeat;
-  background-size: cover;
+/* .enlace {
+        position: absolute;
+        padding: 20px 50px;
+
+        .logo {
+            height: 40px;
+        }
+
+        .logo:hover {
+            transform: scale(1.04);
+        }
+    }
+
+    ul {
+        float: right;
+        display: flex;
+        margin-right: 30px;
+
+        li {
+            margin: 25px 15px;
+
+            a {
+                color: #000000;
+                font-weight: bold;
+                font-size: 18px;
+                padding: 7px 13px;
+                border-radius: 10px;
+            }
+
+        }
+
+        li:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    .checkbtn {
+        font-size: 30px;
+        color: black;
+        float: right;
+        line-height: 80px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    }
+
+    #check{
+        display: none;
+    } */
+.contenedor-inicio .contenedor-titulo {
+  background-image: url(../assets/fondoIndex.jpg);
+  text-align: center;
+  color: #fff;
   background-position: center center;
-  height: calc(26vh - 80px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 8rem 0;
 }
-
-.plan-container {
+.contenedor-inicio .contenedor-titulo h1 {
+  font-size: 3.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.contenedor-inicio .contenedor-titulo p {
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.contenedor-inicio .contenedor-planes {
+  padding: 2rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  margin: 2rem auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
-.plan-container .plan-container__eleccion h1 {
-  font-size: 2.5rem;
-}
-.plan-container .plan-container__eleccion p {
-  font-size: 1.3rem;
-}
-.plan-container .plan-container__total,
-.plan-container .plan-container__plus {
-  background-color: #E3FDFD;
-  -webkit-box-shadow: 3px 1px 10px 0 #ade8f4;
-          box-shadow: 3px 1px 10px 0 #ade8f4;
-  padding: 2rem;
-  border-radius: 40px;
-}
-.plan-container .plan-container__total h2,
-.plan-container .plan-container__plus h2 {
-  text-align: center;
-  font-size: 2.5rem;
-}
-.plan-container .plan-container__total ul,
-.plan-container .plan-container__plus ul {
-  list-style-type: none;
-  margin: 1.5rem auto;
-}
-.plan-container .plan-container__total ul li::before,
-.plan-container .plan-container__plus ul li::before {
-  content: "✓  ";
-}
-.plan-container .plan-container__total a,
-.plan-container .plan-container__plus a {
-  background-color: #71C9CE;
-  text-decoration: none;
-  color: black;
+.contenedor-inicio .contenedor-planes .plan-total,
+.contenedor-inicio .contenedor-planes .plan-plus {
+  background-color: #fff;
+  padding: 2rem 0;
   border-radius: 10px;
-  margin-left: 6rem;
-  padding: 0.5rem;
-  font-weight: bold;
 }
-.plan-container .plan-container__total a:hover,
-.plan-container .plan-container__plus a:hover {
-  background-color: #ade8f4;
+.contenedor-inicio .contenedor-planes .plan-total h2,
+.contenedor-inicio .contenedor-planes .plan-plus h2 {
+  font-size: 4rem;
+  text-align: center;
 }
-.plan-container .plan-container__total #ultimoItem::before,
-.plan-container .plan-container__plus #ultimoItem::before {
+.contenedor-inicio .contenedor-planes .plan-total ul li,
+.contenedor-inicio .contenedor-planes .plan-plus ul li {
+  font-size: 1.5rem;
+}
+.contenedor-inicio .contenedor-planes .plan-total ul li::before,
+.contenedor-inicio .contenedor-planes .plan-plus ul li::before {
+  content: "✔    ";
+}
+.contenedor-inicio .contenedor-planes .plan-total #ultimoItem::before,
+.contenedor-inicio .contenedor-planes .plan-plus #ultimoItem::before {
   content: "X   ";
+}
+.contenedor-inicio .contenedor-planes .plan-total a,
+.contenedor-inicio .contenedor-planes .plan-plus a {
+  background-color: #55CDFC;
+  color: #000000;
+  display: block;
+  text-align: center;
+  margin: 1rem 10rem 0 10rem;
+  padding: 0.7rem;
+  border-radius: 5px;
+}
+.contenedor-inicio .contenedor-planes .plan-total a:hover,
+.contenedor-inicio .contenedor-planes .plan-plus a:hover {
+  background-color: #0077B6;
 }
 
 .entrenamientos-title {
@@ -214,69 +248,264 @@ body {
           justify-content: space-between;
 }
 
-.footer-general {
+.consulta-title {
+  text-align: center;
+  font-size: 2rem;
+  margin: 3rem auto;
+}
+
+.consulta-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
-  margin-top: 15rem;
-  background-color: #E3FDFD;
+  padding: 2rem;
+  background-color: #CAF0F8;
+  border-radius: 10px;
+  width: 50rem;
+  margin: 0 auto;
 }
-.footer-general .footer-general__logos {
+.consulta-form .form-group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 5rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+  width: 100%;
 }
-.footer-general .footer-general__logos .logoGym {
-  width: 10%;
-  height: 10%;
-  margin-right: 1rem;
+.consulta-form .form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
 }
-.footer-general .footer-general__logos a .logoIg {
-  width: 9%;
+.consulta-form .form-group input,
+.consulta-form .form-group textarea,
+.consulta-form .form-group select {
+  padding: 7px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-family: "Poppins", sans-serif;
 }
-.footer-general .footer-general__socios,
-.footer-general .footer-general__legal {
-  text-align: center;
-  margin-right: 2rem;
-  width: 30%;
+.consulta-form .form-group input:focus,
+.consulta-form .form-group textarea:focus,
+.consulta-form .form-group select:focus {
+  border-color: #006699;
+  outline: none;
 }
-.footer-general .footer-general__socios li,
-.footer-general .footer-general__legal li {
-  margin: 5px 0;
+.consulta-form .form-group button {
+  background-color: rgba(113, 201, 206, 0.4588235294);
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 0;
+  cursor: pointer;
+  width: 20%;
+  margin: 2rem auto;
 }
-.footer-general .footer-general__socios li a,
-.footer-general .footer-general__legal li a {
-  color: black;
+.consulta-form .form-group button:hover {
+  background-color: #ade8f4;
 }
 
-.footerEntrenamientos {
-  margin-top: 12rem;
-  padding: 2rem 0;
+.profesContenedor {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content;
+  grid-template-rows: min-content min-content min-content min-content;
+  grid-template-areas: "title title" "img0 datos0" "img1 datos1" "img2 datos2";
+  margin: 5rem 5rem;
+}
+.profesContenedor .profesTitle {
+  grid-area: title;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.profesContenedor .profesTitle h1 {
+  font-size: 3rem;
+}
+.profesContenedor .datosProfe0 {
+  grid-area: datos0;
+}
+.profesContenedor .datosProfe1 {
+  grid-area: datos1;
+}
+.profesContenedor .datosProfe2 {
+  grid-area: datos2;
+}
+.profesContenedor .imgProfe0 {
+  grid-area: img0;
+  margin: 0 auto;
+}
+.profesContenedor .imgProfe1 {
+  grid-area: img1;
+  margin: 0 auto;
+}
+.profesContenedor .imgProfe2 {
+  grid-area: img2;
+  margin: 0 auto;
+}
+.profesContenedor .datosProfe0,
+.profesContenedor .datosProfe1,
+.profesContenedor .datosProfe2 {
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-general {
+  background-color: #55CDFC;
+  margin-top: 5rem;
+  padding: 5rem 0;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: -webkit-min-content;
+  grid-template-rows: min-content;
+  grid-template-areas: "listas derechos derechos redes";
+}
+.footer-general .footer-redes {
+  grid-area: redes;
+  align-self: self-end;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.footer-general .footer-redes .footer-redes__iconos a img {
+  margin: 5px 10px 0 10px;
+  width: 30px;
+}
+.footer-general .footer-derechos {
+  grid-area: derechos;
+  text-align: center;
+}
+.footer-general .footer-derechos img {
+  width: 120px;
+  margin-bottom: 10px;
+}
+.footer-general .footer-listas {
+  grid-area: listas;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background-color: #71C9CE;
 }
-.footerEntrenamientos .cardImg {
-  margin: 2rem 49rem 0 0;
+.footer-general .footer-listas ul li a {
+  color: #000000;
 }
-.footerEntrenamientos .cardImg .logoFooter {
-  width: 10rem;
+
+/* 1024, 768 y 480 */
+@media screen and (max-width: 480px) {
+  .nav-container {
+    height: 200px;
+  }
+  .nav-container ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nav-container ul li {
+    margin: 10px 0;
+  }
+  .contenedor-inicio .contenedor-titulo {
+    background-image: none;
+    text-align: center;
+  }
+  .contenedor-inicio .contenedor-titulo h1 {
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  .contenedor-inicio .contenedor-titulo p {
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  .contenedor-inicio .contenedor-planes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .contenedor-inicio .contenedor-planes .plan.total,
+  .contenedor-inicio .contenedor-planes .plan-plus {
+    background-color: #fff;
+    padding: 2rem 0;
+  }
 }
-.footerEntrenamientos .cardImg a .igFooter {
-  width: 3rem;
-  margin-left: 1.5rem;
-}
-.footerEntrenamientos .cardSocios a,
-.footerEntrenamientos .cardLegal a {
-  color: black;
-}
+/*     .profesContenedor {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profesTitle h1 {
+        font-size: 32px;
+        margin: 0 -5rem;
+    }
+
+    .profesTitle h3 {
+        font-size: 25px;
+        margin: 1rem -3rem 0 -3rem;
+    }
+
+    .datosProfe0 {
+        margin-top: 3rem;
+    }
+
+    .datosProfe0 h6 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .datosProfe0 p {
+        font-size: 20px;
+        text-align: center;
+        margin: 16px 0;
+    }
+
+    .datosProfe1 {
+        margin-top: 3rem;
+    }
+
+    .datosProfe1 h6 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .datosProfe1 p {
+        font-size: 20px;
+        text-align: center;
+        margin: 16px 0;
+    }
+
+    .datosProfe2 {
+        margin-top: 3rem;
+    }
+
+    .datosProfe2 h6 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .datosProfe2 p {
+        font-size: 20px;
+        text-align: center;
+        margin: 16px 0;
+    }
+} */
