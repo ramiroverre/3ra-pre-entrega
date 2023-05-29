@@ -5,11 +5,11 @@
     margin: 7rem auto;
 
     h1 {
-        font-size: 10rem;
+        font-size: 4rem;
     }
 
     h2 {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
 
     .entrenamientos-title__link {
@@ -17,15 +17,15 @@
         color: black;
         font-weight: bold;
         margin: 2.5rem auto;
-        background-color: #E3FDFD;
+        background-color: #55CDFC;
         padding: 1rem;
         border-radius: 50px;
-        box-shadow: 1px 1px 10px #AFE5E8;
-
     }
 
     .entrenamientos-title__link:hover {
-        transform: scale(1.02);
+        transform: scale(1.07);
+        transition-duration: .1s;
+        color: #fff;
     }
 }
 

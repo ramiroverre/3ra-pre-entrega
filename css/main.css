@@ -26,6 +26,12 @@ body {
 .nav-container .nav-enlace-logo img {
   height: 40px;
 }
+.nav-container .nav-enlace-logo img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
 .nav-container ul {
   float: right;
   display: -webkit-box;
@@ -43,56 +49,16 @@ body {
   padding: 7px 13px;
   border-radius: 10px;
 }
+.nav-container ul li a:hover {
+  color: #fff;
+}
+.nav-container ul li:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+}
 
-/* .enlace {
-        position: absolute;
-        padding: 20px 50px;
-
-        .logo {
-            height: 40px;
-        }
-
-        .logo:hover {
-            transform: scale(1.04);
-        }
-    }
-
-    ul {
-        float: right;
-        display: flex;
-        margin-right: 30px;
-
-        li {
-            margin: 25px 15px;
-
-            a {
-                color: #000000;
-                font-weight: bold;
-                font-size: 18px;
-                padding: 7px 13px;
-                border-radius: 10px;
-            }
-
-        }
-
-        li:hover {
-            transform: scale(1.05);
-        }
-    }
-
-    .checkbtn {
-        font-size: 30px;
-        color: black;
-        float: right;
-        line-height: 80px;
-        margin-right: 40px;
-        cursor: pointer;
-        display: none;
-    }
-
-    #check{
-        display: none;
-    } */
 .contenedor-inicio .contenedor-titulo {
   background-image: url(../assets/fondoIndex.jpg);
   text-align: center;
@@ -150,10 +116,15 @@ body {
   margin: 1rem 10rem 0 10rem;
   padding: 0.7rem;
   border-radius: 5px;
+  font-weight: bold;
 }
 .contenedor-inicio .contenedor-planes .plan-total a:hover,
 .contenedor-inicio .contenedor-planes .plan-plus a:hover {
   background-color: #0077B6;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
 }
 
 .entrenamientos-title {
@@ -170,25 +141,26 @@ body {
   margin: 7rem auto;
 }
 .entrenamientos-title h1 {
-  font-size: 10rem;
+  font-size: 4rem;
 }
 .entrenamientos-title h2 {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
 .entrenamientos-title .entrenamientos-title__link {
   text-decoration: none;
   color: black;
   font-weight: bold;
   margin: 2.5rem auto;
-  background-color: #E3FDFD;
+  background-color: #55CDFC;
   padding: 1rem;
   border-radius: 50px;
-  -webkit-box-shadow: 1px 1px 10px #AFE5E8;
-          box-shadow: 1px 1px 10px #AFE5E8;
 }
 .entrenamientos-title .entrenamientos-title__link:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+  color: #fff;
 }
 
 .entrenamientos-container {
@@ -403,8 +375,15 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
+.footer-general .footer-listas ul li {
+  margin: 5px 0;
+}
 .footer-general .footer-listas ul li a {
   color: #000000;
+}
+.footer-general .footer-listas ul li:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
 }
 
 /* 1024, 768 y 480 */

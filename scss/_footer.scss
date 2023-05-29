@@ -39,10 +39,17 @@
         justify-content: space-around;
 
         ul{
+
             li{
+                margin: 5px 0;
+
                 a{
                     color: #000000;
                 }
+            }
+
+            li:hover {
+                transform: scale(1.01);
             }
         }
     }

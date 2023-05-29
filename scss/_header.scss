@@ -10,39 +10,12 @@
         img {
             height: 40px;
         }
-    }
-
-    ul {
-        float: right;
-        display: flex;
-        margin-right: 30px;
-
-        li {
-            margin: 25px 15px;
-
-            a {
-                color: #000000;
-                font-weight: bold;
-                font-size: 18px;
-                padding: 7px 13px;
-                border-radius: 10px;
-            }
+        img:hover {
+            transform: scale(1.05);
+            transition-duration: .2s;
         }
     }
-}
 
-/* .enlace {
-        position: absolute;
-        padding: 20px 50px;
-
-        .logo {
-            height: 40px;
-        }
-
-        .logo:hover {
-            transform: scale(1.04);
-        }
-    }
 
     ul {
         float: right;
@@ -60,23 +33,17 @@
                 border-radius: 10px;
             }
 
+            a:hover {
+                color: #fff;
+                
+            }
         }
 
         li:hover {
-            transform: scale(1.05);
+            
+            transform: scale(1.1);
+            transition-duration: .1s;
+            
         }
     }
-
-    .checkbtn {
-        font-size: 30px;
-        color: black;
-        float: right;
-        line-height: 80px;
-        margin-right: 40px;
-        cursor: pointer;
-        display: none;
-    }
-
-    #check{
-        display: none;
-    } */
+}

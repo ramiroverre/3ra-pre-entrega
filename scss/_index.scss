@@ -57,10 +57,13 @@
                 margin: 1rem 10rem 0 10rem;
                 padding: .7rem;
                 border-radius: 5px;
+                font-weight: bold;
             }
 
             a:hover {
                 background-color: #0077B6;
+                transform: scale(1.05);
+                transition-duration: .1s;
             }
         }
     }
