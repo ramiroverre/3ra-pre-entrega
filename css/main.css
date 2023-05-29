@@ -495,6 +495,54 @@ body {
     width: 100%;
     border-radius: 0;
   }
+  /* MEDIA - ENTRENAMIENTOS */
+  .entrenamientos-title {
+    text-align: center;
+    margin: 3rem 0;
+  }
+  .entrenamientos-title h1 {
+    font-size: 3rem;
+  }
+  .entrenamientos-title h2 {
+    font-size: 1.3rem;
+  }
+  .entrenamientos-title .entrenamientos-title__link {
+    width: 80%;
+    font-size: 1.8rem;
+  }
+  .entrenamientos-container {
+    margin: 0;
+    padding: 0;
+  }
+  .entrenamientos-container .entrenamientos-container__card,
+  .entrenamientos-container .entrenamientos-container__card--op {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin: 2rem 0;
+  }
+  .entrenamientos-container .entrenamientos-container__card img,
+  .entrenamientos-container .entrenamientos-container__card--op img {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .entrenamientos-container .entrenamientos-container__card div,
+  .entrenamientos-container .entrenamientos-container__card--op div {
+    width: 100%;
+  }
+  .entrenamientos-container .entrenamientos-container__card div h3,
+  .entrenamientos-container .entrenamientos-container__card--op div h3 {
+    text-align: center;
+  }
+  .entrenamientos-container .entrenamientos-container__card div p,
+  .entrenamientos-container .entrenamientos-container__card--op div p {
+    text-align: center;
+    font-size: 18px;
+  }
 }
 /*     .profesContenedor {
         display: flex;

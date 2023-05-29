@@ -1,6 +1,8 @@
 /* 1024, 768 y 480 */
 @media screen and (max-width: 1024px) {}
-@media screen and (max-width: 768px){}
+
+@media screen and (max-width: 768px) {}
+
 @media screen and (max-width: 480px) {
     .nav-container {
         height: 200px;
@@ -35,10 +37,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        
+
 
         .footer-redes {
             align-self: normal;
+
             p {
                 font-size: 2rem;
             }
@@ -111,8 +114,8 @@
         padding: 3rem;
         margin: 0;
         font-weight: bold;
-    
-        p{
+
+        p {
             font-size: 1.3rem;
         }
     }
@@ -122,8 +125,53 @@
         border-radius: 0;
     }
 
-    
+    /* MEDIA - ENTRENAMIENTOS */
 
+    .entrenamientos-title {
+        text-align: center;
+        margin: 3rem 0;
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+        }
+
+        .entrenamientos-title__link {
+            width: 80%;
+            font-size: 1.8rem;
+        }
+    }
+
+    .entrenamientos-container {
+        margin: 0;
+        padding: 0;
+
+        .entrenamientos-container__card,
+        .entrenamientos-container__card--op {
+            display: flex;
+            flex-direction: column-reverse;
+            margin: 2rem 0;
+
+            img {
+                width: 100%;
+                margin-top: 1rem;
+            }
+            
+            div {
+                width: 100%;
+                h3 {
+                    text-align: center;
+                }
+                p {
+                    text-align: center;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
 }
 
 
