@@ -10,12 +10,12 @@
         img {
             height: 40px;
         }
+
         img:hover {
             transform: scale(1.05);
-            transition-duration: .2s;
+            transition-duration: .05s;
         }
     }
-
 
     ul {
         float: right;
@@ -34,16 +34,13 @@
             }
 
             a:hover {
-                color: #fff;
-                
+                color: #fff; 
             }
         }
 
         li:hover {
-            
             transform: scale(1.1);
             transition-duration: .1s;
-            
         }
     }
 }

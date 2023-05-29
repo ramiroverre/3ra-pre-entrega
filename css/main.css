@@ -29,8 +29,8 @@ body {
 .nav-container .nav-enlace-logo img:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
-  -webkit-transition-duration: 0.2s;
-          transition-duration: 0.2s;
+  -webkit-transition-duration: 0.05s;
+          transition-duration: 0.05s;
 }
 .nav-container ul {
   float: right;
@@ -236,7 +236,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 2rem;
-  background-color: #CAF0F8;
+  background-color: #55CDFC;
   border-radius: 10px;
   width: 50rem;
   margin: 0 auto;
@@ -272,7 +272,7 @@ body {
   outline: none;
 }
 .consulta-form .form-group button {
-  background-color: rgba(113, 201, 206, 0.4588235294);
+  background-color: #0077B6;
   font-size: 1rem;
   font-weight: bold;
   border: none;
@@ -283,7 +283,9 @@ body {
   margin: 2rem auto;
 }
 .consulta-form .form-group button:hover {
-  background-color: #ade8f4;
+  color: #fff;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
 }
 
 .profesContenedor {
@@ -391,6 +393,9 @@ body {
   .nav-container {
     height: 200px;
   }
+  .nav-container .nav-enlace-logo {
+    margin-top: 3.5rem;
+  }
   .nav-container ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -403,6 +408,50 @@ body {
   .nav-container ul li {
     margin: 10px 0;
   }
+  /* MEDIA - FOOTER */
+  .footer-space {
+    background-image: url(../assets/fondoIndex.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4rem 0;
+  }
+  .footer-general {
+    margin-top: 0;
+    padding-bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-general .footer-redes {
+    -ms-flex-item-align: normal;
+        align-self: normal;
+  }
+  .footer-general .footer-redes p {
+    font-size: 2rem;
+  }
+  .footer-general .footer-redes .footer-redes__iconos a img {
+    width: 50px;
+  }
+  .footer-general .footer-derechos {
+    margin-top: 2rem;
+  }
+  .footer-general .footer-listas {
+    margin-top: 4rem;
+  }
+  .footer-general .footer-listas .footer-socios,
+  .footer-general .footer-listas .footer-legal {
+    padding: 0 0.5rem;
+    text-align: center;
+  }
+  /* MEDIA - INDEX */
   .contenedor-inicio .contenedor-titulo {
     background-image: none;
     text-align: center;
@@ -426,6 +475,25 @@ body {
   .contenedor-inicio .contenedor-planes .plan-plus {
     background-color: #fff;
     padding: 2rem 0;
+  }
+  /* MEDIA -- CONSULTA */
+  .consulta-title {
+    background-image: url(../assets/fondoIndex.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 3rem;
+    margin: 0;
+    font-weight: bold;
+  }
+  .consulta-title p {
+    font-size: 1.3rem;
+  }
+  .consulta-form {
+    width: 100%;
+    border-radius: 0;
   }
 }
 /*     .profesContenedor {

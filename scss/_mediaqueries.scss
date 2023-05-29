@@ -2,9 +2,12 @@
 @media screen and (max-width: 1024px) {}
 @media screen and (max-width: 768px){}
 @media screen and (max-width: 480px) {
-
     .nav-container {
         height: 200px;
+
+        .nav-enlace-logo {
+            margin-top: 3.5rem;
+        }
 
         ul {
             display: flex;
@@ -15,6 +18,58 @@
             }
         }
     }
+
+    /* MEDIA - FOOTER */
+
+    .footer-space {
+        background-image: url(../assets/fondoIndex.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 4rem 0;
+    }
+
+    .footer-general {
+        margin-top: 0;
+        padding-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+
+        .footer-redes {
+            align-self: normal;
+            p {
+                font-size: 2rem;
+            }
+
+            .footer-redes__iconos {
+                a {
+                    img {
+                        width: 50px;
+                    }
+                }
+            }
+        }
+
+        .footer-derechos {
+            margin-top: 2rem;
+        }
+
+        .footer-listas {
+            margin-top: 4rem;
+
+            .footer-socios,
+            .footer-legal {
+                padding: 0 .5rem;
+                text-align: center;
+            }
+        }
+
+    }
+
+    /* MEDIA - INDEX */
+
     .contenedor-inicio {
 
         .contenedor-titulo {
@@ -43,7 +98,42 @@
             }
         }
     }
+
+    /* MEDIA -- CONSULTA */
+
+    .consulta-title {
+        background-image: url(../assets/fondoIndex.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-size: 1.5rem;
+        color: #fff;
+        padding: 3rem;
+        margin: 0;
+        font-weight: bold;
+    
+        p{
+            font-size: 1.3rem;
+        }
+    }
+
+    .consulta-form {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    
+
 }
+
+
+
+
+
+
+
+
+
 
 /*     .profesContenedor {
         display: flex;

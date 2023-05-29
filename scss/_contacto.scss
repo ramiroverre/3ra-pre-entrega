@@ -9,7 +9,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 2rem;
-    background-color: #CAF0F8;
+    background-color: #55CDFC;
     border-radius: 10px;
     width: 50rem;
     margin: 0 auto;
@@ -43,7 +43,7 @@
         }
 
         button {
-            background-color: #71c9ce75;
+            background-color: #0077B6;
             font-size: 1rem;
             font-weight: bold;
             border: none;
@@ -55,7 +55,8 @@
         }
 
         button:hover {
-            background-color: #ade8f4;
+            color: #fff;
+            transition-duration: .1s;
         }
     }
 }
