@@ -1,58 +1,63 @@
-.profesContenedor {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: min-content min-content min-content min-content;
-    grid-template-areas: 
-    "title title"
-    "img0 datos0"
-    "img1 datos1"
-    "img2 datos2";
-    margin: 5rem 5rem;
+.profes-title {
+    text-align: center;
+    padding: 8rem 0;
+    background-image: url(../assets/fondoIndex.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
-    .profesTitle {
-        grid-area: title;
-        text-align: center;
-        margin-bottom: 5rem;
+    h1 {
+        font-size: 3.5rem;
+    }
 
-        h1 {
-            font-size: 3rem;
+    h3 {
+        font-size: 2rem;
+    }
+}
+
+.profes-container {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 4rem;
+
+    .profesor {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 4rem 0;
+
+        img {
+            box-shadow: 2px 4px 15px 0 #000;
+        }
+
+        .datos-profesor {
+
+            h6 {
+                font-size: 3rem;
+                font-weight: bold;
+            }
+
+            p {
+                font-size: 1.5rem;
+            }
+
+            a {
+                display: inline-block;
+                margin: 1rem 0;
+                font-size: 25px;
+                background-color: #CAF0F8;
+                padding: .5rem;
+                border-radius: 5px;
+                color: #000000;
+            }
+
+            a:hover {
+                transform: scale(1.1);
+                transition-duration: .1s;
+                background-color: #55CDFC;
+            }
         }
     }
-
-    .datosProfe0 {
-        grid-area: datos0;
-    }
-
-    .datosProfe1 {
-        grid-area: datos1;
-    }
-    
-    .datosProfe2 {
-        grid-area: datos2;
-    }
-
-    .imgProfe0 {
-        grid-area: img0;
-        margin: 0 auto;
-    }
-
-    .imgProfe1 {
-        grid-area: img1;
-        margin: 0 auto;
-    }
-    
-    .imgProfe2 {
-        grid-area: img2;
-        margin: 0 auto;
-    }
-    
-    .datosProfe0,
-    .datosProfe1,
-    .datosProfe2 {
-        font-size: 2rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
 }
