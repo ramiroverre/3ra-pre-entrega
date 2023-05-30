@@ -1,7 +1,159 @@
-/* 1024, 768 y 480 */
-@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 768px) {
+    .nav-container {
+        background-color: #55CDFC;
+        height: 80px;
+        width: 100%;
 
-@media screen and (max-width: 768px) {}
+        .nav-enlace-logo {
+            position: absolute;
+            padding: 20px 50px;
+
+            img {
+                height: 40px;
+            }
+        }
+
+        ul {
+
+            li {
+                margin: 25px 0;
+            }
+        }
+    }
+
+    /* MEDIA - FOOTER */
+
+    .footer-space {
+        background-image: url(../assets/fondoIndex.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 4rem 0;
+    }
+
+    .footer-general {
+        margin-top: 0;
+        padding-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        .footer-redes {
+            align-self: normal;
+
+            p {
+                font-size: 2rem;
+            }
+
+            .footer-redes__iconos {
+                a {
+                    img {
+                        width: 50px;
+                    }
+                }
+            }
+        }
+
+        .footer-derechos {
+            margin-top: 2rem;
+        }
+
+        .footer-listas {
+            margin-top: 4rem;
+
+            .footer-socios,
+            .footer-legal {
+                padding: 0 .5rem;
+                text-align: center;
+            }
+        }
+    }
+
+    /* MEDIA - INDEX */
+
+    .contenedor-planes {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background: rgb(85, 205, 252);
+        background: linear-gradient(90deg, rgba(85, 205, 252, 1) 12%, rgba(11, 126, 204, 1) 30%, rgba(0, 139, 191, 1) 100%);
+
+        .plan-total,
+        .plan-plus {
+            box-shadow: 2px 4px 15px 0 #000;
+            margin: 5rem 0;
+        }
+
+    }
+
+    /* MEDIA - ENTRENAMIENTOS */
+
+    .entrenamientos-title {
+        text-align: center;
+        .entrenamientos-title__link {
+            width: 50%;
+            font-size: 1.8rem;
+        }
+    }
+
+    .entrenamientos-container {
+        .entrenamientos-container__card,
+        .entrenamientos-container__card--op {
+            display: flex;
+            flex-direction: column-reverse;
+
+            div {
+                margin: 2rem 0;
+            }
+
+            img {
+                margin-bottom: 4rem;
+            }
+        }
+    }
+
+    /* MEDIA - ABOUT-US */
+
+    .body-nosotros {
+        background: rgb(85, 205, 252);
+        background: linear-gradient(90deg, rgba(85, 205, 252, 1) 12%, rgba(11, 126, 204, 1) 30%, rgba(0, 139, 191, 1) 100%);
+    }
+
+    .profes-title {
+        h1 {
+            font-size: 3.2rem;
+        }
+        h3 {
+            margin-top: 4rem;
+        }
+    }
+
+    .profes-container {
+
+        
+        .profesor {
+            display: flex;
+            flex-direction: column;
+
+            .datos-profesor {
+                text-align: center;
+                margin: 2rem 0;
+
+                a {
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+
+    /* MEDIA - CONTACTO */
+
+    .consulta-form {
+        width: 100%;
+    }
+}
 
 @media screen and (max-width: 480px) {
     .nav-container {
@@ -76,7 +228,10 @@
     .contenedor-inicio {
 
         .contenedor-titulo {
-            background-image: none;
+            background-image: url(../assets/fondoIndex.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
             text-align: center;
 
             h1 {
@@ -91,18 +246,16 @@
         }
 
         .contenedor-planes {
-            display: flex;
-            flex-wrap: wrap;
 
-            .plan.total,
+            .plan-total,
             .plan-plus {
                 background-color: #fff;
-                padding: 2rem 0;
+                padding: 5rem 0;
             }
         }
     }
 
-    /* MEDIA -- CONSULTA */
+    /* MEDIA - CONSULTA */
 
     .consulta-title {
         background-image: url(../assets/fondoIndex.jpg);
@@ -159,12 +312,14 @@
                 width: 100%;
                 margin-top: 1rem;
             }
-            
+
             div {
                 width: 100%;
+
                 h3 {
                     text-align: center;
                 }
+
                 p {
                     text-align: center;
                     font-size: 18px;
@@ -172,74 +327,31 @@
             }
         }
     }
+
+    /* MEDIA - ABOUT-US */
+
+    .profes-title {
+
+        h1 {
+            font-size: 2.8rem;
+            margin-top: -5rem;
+            margin-bottom: 2rem;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+        }
+    }
+
+    .profes-container {
+
+        .profesor {
+            display: flex;
+            flex-direction: column-reverse;
+
+            img {
+                border-radius: 10px;
+            }
+        }
+    }
 }
-
-
-
-
-
-
-
-
-
-
-/*     .profesContenedor {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .profesTitle h1 {
-        font-size: 32px;
-        margin: 0 -5rem;
-    }
-
-    .profesTitle h3 {
-        font-size: 25px;
-        margin: 1rem -3rem 0 -3rem;
-    }
-
-    .datosProfe0 {
-        margin-top: 3rem;
-    }
-
-    .datosProfe0 h6 {
-        font-size: 32px;
-        text-align: center;
-    }
-
-    .datosProfe0 p {
-        font-size: 20px;
-        text-align: center;
-        margin: 16px 0;
-    }
-
-    .datosProfe1 {
-        margin-top: 3rem;
-    }
-
-    .datosProfe1 h6 {
-        font-size: 32px;
-        text-align: center;
-    }
-
-    .datosProfe1 p {
-        font-size: 20px;
-        text-align: center;
-        margin: 16px 0;
-    }
-
-    .datosProfe2 {
-        margin-top: 3rem;
-    }
-
-    .datosProfe2 h6 {
-        font-size: 32px;
-        text-align: center;
-    }
-
-    .datosProfe2 p {
-        font-size: 20px;
-        text-align: center;
-        margin: 16px 0;
-    }
-} */
